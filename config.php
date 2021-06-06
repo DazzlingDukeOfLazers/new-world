@@ -1,10 +1,10 @@
 <?php
 
 $config = array();
-$config['name'] = "New World";
-$config['author'] = "Microweber";
+$config['name'] = "Making.Systems";
+$config['author'] = "Making.Systems";
 $config['version'] = 2.6;
-$config['url'] = "http://microweber.com";
+$config['url'] = "http://making.systems";
 $config['standalone_module_skins'] = true;
 $config['framework'] = "bootstrap4";
 
