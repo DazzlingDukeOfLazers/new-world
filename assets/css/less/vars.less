@@ -3,7 +3,7 @@
 *****************************/
 
 /* Background */
-@background: #81004d;
+@background: #aa2045;
 @background-card: #D62755;
 
 @background-three: #CA7473;
@@ -44,7 +44,8 @@
 @default: @dark;
 @defaultHover: lighten(@default, 20%);
 
-@primary: #0044de;
+@darkblue: #0044de;
+@primary: #811834;
 @primaryHover: lighten(@primary, 20%);
 
 @secondary: #6aabcf;
@@ -81,8 +82,8 @@
 /****************************
            HEADER
 *****************************/
-@header-background-color: darken(@primary, 0%);
-
+// @header-background-color: darken(@primary, 0%);
+@header-background-color: @background;
 /*When to open Main Menu Burger*/
 @burgerOpenMedia: 1200px;
 @downMedia: 1199px;
@@ -94,8 +95,11 @@
 /*Header Menu Navigation*/
 @header-menu-font-weight: 600;
 @header-menu-font-color: @textOnBackground;
-@header-menu-font-color-on-hover: @primary;
-@header-menu-font-color-on-sticky: @textDark;
+//@header-menu-font-color-on-hover: @primary;
+@header-menu-font-color-on-hover: @highlight;
+@header-menu-font-color-on-sticky: @textOnBackground;
+
+
 @header-menu-font-size: 16px;
 @header-menu-text-transform: inherit;
 @header-menu-font-family: @fontFamily;

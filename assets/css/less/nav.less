@@ -9,6 +9,7 @@
 
 
 .navigation {
+  color: #fff;
   margin-bottom: 0;
   border: 0;
   -webkit-border-radius: 0;
@@ -16,14 +17,16 @@
   border-radius: 0;
   transition: height .4s;
   transition: background .4s;
-  background: rgba(red(@light), green(@light), blue(@light), .15);
+  background: @background-card;
+  // background: rgba(red(@light), green(@light), blue(@light), .15);
 }
 
 .navigation .logo a .logo-text,
 .navigation .logo .logo-text,
 .navigation .logo a,
 .navigation .logo a span {
-  color: @dark;
+  // color: @dark;
+  color: #fff;
   font-size: 28px;
   font-weight: bold;
   text-decoration: none;
@@ -104,7 +107,8 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    background: #fff;
+    // background: #fff;
+    background: @background-card;
     box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 1px 6px rgba(0,0,0,0.23);
 }
 
@@ -116,6 +120,7 @@
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
 .container > .navbar-header {
+  background: @background-card;
   width: 100%;
   .mixin-flex-row-nowrap();
   align-items: center;
@@ -588,11 +593,17 @@ html:not(.sidebar-nav-website) .toggle .mobile-menu-btn.active span {
   }
 }
 
+
+// .navigation .list>li.active-parent>a, 
+// .navigation .list>li.active>a, 
+// .navigation .list>li>a:hover
+
 .navigation .list > li > a {
   display: block;
   text-decoration: none;
   position: relative;
-  color: #333;
+  // color: #333;
+  color: #fff;
   padding: .7rem .5rem;
 }
 
@@ -619,6 +630,7 @@ body[data-lang="ar"] .navigation .list li.has-sub-menu > a:after {
 .navigation .list > li.active > a,
 .navigation .list > li.active-parent > a {
   color: @header-menu-font-color-on-hover;
+  // color: @secondary;
   .transition(all, 0.3s, ease);
 }
 
