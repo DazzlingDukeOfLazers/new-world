@@ -5,6 +5,7 @@
  ******************************************* */
 
 .section {
+  background: @background-card;
   min-height: 100px;
   padding: 30px 0;
 }
@@ -621,7 +622,8 @@
 
   .info-holder {
     z-index: 9;
-    background: @background;
+    // background: @background;
+    background: @background-card;
     padding: 50px 70px;
     border: 1px solid rgba(red(@textDark), green(@textDark), blue(@textDark), 0.3);
   }

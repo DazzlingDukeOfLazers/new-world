@@ -1,8 +1,8 @@
 <?php
 
 $config = array();
-$config['name'] = "Making.Systems";
-$config['author'] = "Making.Systems";
+$config['name'] = "New World";
+$config['author'] = "Someone";
 $config['version'] = 2.6;
 $config['url'] = "http://making.systems";
 $config['standalone_module_skins'] = true;
