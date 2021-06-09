@@ -6197,6 +6197,8 @@ ul.socials-2 li a:hover {
 .styled-lists li p {
   font-size: 16px;
 }
+
+
 /* Blog posts */
 .blog-posts .slick-arrow {
   display: none;
@@ -6205,8 +6207,10 @@ ul.socials-2 li a:hover {
   margin-bottom: 30px !important;
 }
 .blog-posts .post .description {
+  
   min-height: 260px;
   text-align: left;
+
 }
 .blog-posts .post .description h3 {
   display: -webkit-box;
