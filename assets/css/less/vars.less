@@ -110,17 +110,31 @@
 /*Header Dropdown menu*/
 @header-dropdown-color: @textLight;
 @header-dropdown-color-on-hover: fade(@header-dropdown-color, 80%);
-@header-dropdown-back-on-hover: fade(@textLight, 3%);
-@header-dropdown-back-color: @textDark;
+@header-dropdown-back-on-hover: @background;
+@header-dropdown-back-color: @background;
 @header-dropdown-border-color: fade(@textLight, 10%);
+
+// @header-dropdown-color: @textLight;
+// @header-dropdown-color-on-hover: fade(@header-dropdown-color, 80%);
+// @header-dropdown-back-on-hover: fade(@textLight, 3%);
+// @header-dropdown-back-color: @textDark;
+// @header-dropdown-border-color: fade(@textLight, 10%);
 
 /*Mobile Main Menu Navigation*/
 @mobile-main-menu-font-color: @textDark;
 @mobile-main-menu-font-active-color: @header-menu-font-color-on-hover;
-@mobile-main-menu-background-color: darken(@textLight, 0%);
+@mobile-main-menu-background-color: @background;
 @mobile-main-menu-overlay-color: fade(@textDark, 50%);
 @mobile-search-overlay-color: fade(@textLight, 50%);
 @mobile-toggle-inside-menu-color: @textDark;
+
+// @mobile-main-menu-font-color: @textDark;
+// @mobile-main-menu-font-active-color: @header-menu-font-color-on-hover;
+// @mobile-main-menu-background-color: darken(@textLight, 0%);
+// @mobile-main-menu-overlay-color: fade(@textDark, 50%);
+// @mobile-search-overlay-color: fade(@textLight, 50%);
+// @mobile-toggle-inside-menu-color: @textDark;
+
 
 /*Mobile Main Menu Navigation*/
 @mobile-second-menu-font-color: @mobile-main-menu-font-color;
