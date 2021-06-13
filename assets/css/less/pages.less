@@ -286,7 +286,8 @@
   .main-price {
     font-weight: bold;
     .price {
-      color: @primary;
+      // color: @primary;
+      color: @light;
       font-size: @title-sm;
 
       span {
@@ -671,7 +672,7 @@
     }
 
     .square {
-      border: 1px solid @silver;
+      border: 5px solid @background-card;
 
       .content {
         padding: 20px;
@@ -1266,6 +1267,11 @@
     margin: 0 auto;
     display: block;
   }
+}
+
+
+.col-12 .col-md-6 .col-lg-4 .col-xl-4 {
+  background: @background-card;
 }
 
 .checkout-modal .js-shopping-cart .products .product:hover {

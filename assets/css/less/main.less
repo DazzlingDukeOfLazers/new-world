@@ -1333,11 +1333,13 @@ ul.socials-2 {
 }
 
 .btn-outline-primary {
-  //color: @primary;
-  border-color: @primary;
+  color: @light;
+  background: @background-card;
+  // color: @primary;
+  // border-color: @primary;
   &:hover {
     background-color: @primary;
-    border-color: @primary;
+    // border-color: @primary;
   }
 }
 
@@ -1354,7 +1356,8 @@ ul.socials-2 {
 }
 
 .btn-link {
-  color: @primary;
+  // color: @primary;
+  color: @light;
   text-decoration: none;
   font-size: @paragraph-xl;
 
@@ -1925,7 +1928,8 @@ ul.socials-2 {
 }
 
 .button-8 {
-  color: @primary !important;
+  // color: @primary !important;
+  color: @light !important;
   text-decoration: none !important;
   font-size: @paragraph-xl !important;
   font-weight: 600;
@@ -1944,7 +1948,8 @@ ul.socials-2 {
     z-index: 2;
     padding-right: 20px;
     transition: all .2s linear 0s;
-    color: @primary !important;
+    color: @light !important;
+    // color: @primary !important;
   }
 
   span:after {
@@ -1961,7 +1966,7 @@ ul.socials-2 {
     height: 100%;
     z-index: 2;
     background: 0 0;
-    color: @primary;
+    color: @light;
     margin-top: 2px;
   }
 
@@ -1972,9 +1977,9 @@ ul.socials-2 {
   }
 
   &.button-red {
-    color: @primary !important;
+    color: @light !important;
     span:after {
-      color: @primary;
+      color: @light;
     }
 
   }
@@ -3440,7 +3445,10 @@ ul.socials-2 {
 /* Shop products */
 .shop-products {
   .product {
-    margin-bottom: 40px;
+    background: @background-card;
+    margin: 10px;
+    padding: 20px;
+    border-radius:10px;
 
     h3 {
       text-decoration: none;
@@ -3461,15 +3469,19 @@ ul.socials-2 {
 
     .image {
       padding: 15px;
-      position: relative;
-      background-origin: content-box;
+      // position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      // background-origin: content-box;
       height: 360px;
       width: 100%;
-      background-position: center center;
+      // background-position: center center;
       -webkit-background-size: contain;
       background-size: contain;
       background-repeat: no-repeat;
-      border: 1px solid @silver;
+      // border: 5px solid @background-card;
+      //margin:10px;
     }
 
     &:hover .image {
@@ -3570,7 +3582,8 @@ ul.socials-2 {
     }
 
     .price {
-      color: @primary;
+      // color: @primary;
+      color: @light;
     }
 
     .price-old {
@@ -4532,6 +4545,7 @@ a.dropdown-toggle::after {
 }
 
 .sidebar__widget {
+  margin-top:20px;
   margin-bottom: 30px;
 
   h6 {
@@ -6109,12 +6123,25 @@ a.dropdown-toggle::after {
   }
 }
 
+li.breadcrumb-item.active {
+  color: @light;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+  color: @light;
+}
+
+.breadcrumb-item {
+  color: @light;
+}
+
 .breadcrumb {
   background-color: transparent;
   justify-content: center;
 
   a {
-    color: @primary;
+    // color: @primary;
+    color: @light;
     font-size: @paragraph-lg;
     font-weight: bold;
   }
