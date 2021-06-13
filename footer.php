@@ -35,7 +35,8 @@
                 </div>
 
                 <div class="col-md-6 text-center text-md-right">
-                    <p><?php print powered_by_link(); ?></p>
+                    <!-- <p><?php print powered_by_link(); ?></p> -->
+                    <p><a href="https://making.systems/">Making.Systems</a> is <a href="https://github.com/DazzlingDukeOfLazers/new-world">forked</a> from <a href="https://github.com/microweber/microweber">Microweber</a></p>
                 </div>
             </div>
         </div>
@@ -55,6 +56,7 @@
     mw.lib.require('slick');
     mw.lib.require('collapse_nav');
 </script>
+
 
 <script src="<?php print template_url(); ?>dist/main.min.js"></script>
 </body>
